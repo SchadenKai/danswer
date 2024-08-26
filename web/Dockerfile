@@ -118,6 +118,10 @@ ENV NEXT_PUBLIC_DISABLE_LOGOUT=${NEXT_PUBLIC_DISABLE_LOGOUT}
 # Note: Don't expose ports here, Compose will handle that for us if necessary. 
 # If you want to run this without compose, specify the ports to 
 # expose via cli
+EXPOSE 3000
+
+ENV PORT=3000
+ENV HOSTNAME=0.0.0.0
 
 CMD ["node", "server.js"]
 
